@@ -12,7 +12,6 @@ public class StartApplication {
 
     @GetMapping("/")
     public String index(final Model model) {
-        private String password = "123456";
         model.addAttribute("title", "I have successfuly built a sprint boot application using Maven");
         model.addAttribute("msg", "This application is deployed on to Kubernetes using Argo CD");
         return "index";
